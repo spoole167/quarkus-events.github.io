@@ -9,7 +9,7 @@ virtual: true
 group: ljc
 link: https://londonjavacommunity.co.uk/
 week: 2021-03-15
-date: 2021-05-17T11:55:01.875Z
+date: 2021-04-16T23:00:00.000Z
 time: 1800
 zone: GMT
 presenters:
