@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign keys = page.keys | sort %}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Element</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for k in keys %}
+    {% if page[k].first %}
+        <tr><td>{{ k }}</td><td>{{ page[k] | join: "," }}</td></tr>
+      {% else %}
+      <tr><td>{{ k }}</td><td>{{ page[k] }}</td></tr>
+      {% endif %}
+
+    {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,28 @@
+title: Quarkus Events
+email: quarkus.events@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  The one-stop-shop for Quarkus related events of all types: for and by the Quarkus user community
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: QuarkusEvents
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-paginate-category
+
+future: true
+
+collections:
+  sections:
+    output: true
+  events:
+    output: true
+  groups:
+    output: true
+  people:
+    output: true
+  guides:
+    output: true

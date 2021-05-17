@@ -1,0 +1,45 @@
+---
+layout: outline
+---
+{% include current_events.html %}
+
+{% include header.html %}
+
+<div class="container-fluid">
+ <div class="row">
+   <div class="col-9">
+    <div class="jumbotron callout">
+     <h1 class="display-5 mt-3">Quarkus Events</h1>
+     <p class="lead mb-4">The one stop shop for virtual or physical events happening in the quarkus world</p>
+       <a class="btn btn-light btn-lg mb-4" href="/sections/contributing.html" role="button">register your event today</a>
+    </div>
+  </div>
+  <div class="col-3">
+
+    <div class='callout'>
+    <div class="card-body mb-4">
+      <a href="#">{{  current_events | size }} Events Planned</a>
+    </div>
+    <div class="card-body mb-4">
+      <a href="#">{{ site.events | size }} Total Events</a>
+    </div>
+
+        <div class="card-body mb-4">
+          <a href="/sections/help_wanted.html">{{ help_requests | size }} open requests</a>
+        </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-9">
+      {{ content }}
+    </div>
+    <div class="col-3">
+      {% include latest.html %}
+
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}

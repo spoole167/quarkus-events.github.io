@@ -1,0 +1,12 @@
+{% assign today = 'now' | date: "%Y%m%d" %}
+{% assign current_events = "" | split: ',' %}
+{% assign help_requests = "" | split: ',' %}
+{% for entry in site.events  %}
+{% assign when = entry.date | date: "%Y%m%d" %}
+{% if when >= today %}
+    {% assign current_events = current_events | push: entry %}
+    {% if entry.help %}
+       {% assign help_requests =  help_requests| push: entry %}
+    {% endif %}
+  {% endif %}
+{% endfor %}

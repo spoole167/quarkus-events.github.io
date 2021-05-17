@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<h1>Help Wanted</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Time</th>
+        <th scope="col">TimeZone</th>
+        <th scope="col">Group</th>
+        <th scope="col">Type</th>
+        <th scope="col">Format</th>
+        <th scope="col">Request</th>
+      </tr>
+    </thead>
+
+    <tbody>
+    {% for entry in site.events  %}
+    {% if entry.help %}
+    <tr>
+      <td>{{ entry.date | date: "%b %d, %Y" }}</td>
+      <td>{{ entry.time }}</td>
+      <td>{{ entry.zone }}</td>
+
+      {% if entry.link %}
+        <td><a href="{{ entry.link }}">{{ entry.group }}</a></td>
+        {% else %}
+          <td>{{ entry.group }}</td>
+      {% endif %}
+        <td>{{ entry.type }}</td>
+        <td>{{ entry.format}} </td>
+        <td><a href="{{ entry.url | relative_url }}">
+          {% for k in entry.help %}
+                {{ k.type }}
+          {% endfor %}
+
+        </a></td>
+
+    </tr>
+    {% endif %}
+{% endfor %}
+    </tbody>
+
+
+  </table>

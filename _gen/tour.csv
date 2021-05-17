@@ -1,0 +1,58 @@
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,"Quarkus is taking its act on the ""virtual"" road to Java user groups across the world. Each session will be approximately 90 mins with 3 distinct sections:
+1) Introduction to Quarkus
+2) Demo - exact demo is TBD but we will leverage existing Quarkus apps (coffee shop, To Do list, etc.)
+3) Ask the Experts (don't be afraid of the word expert, everything is relative)
+
+We Need Your Help! It is going to take the entire Quarkus team to make these events a success. Please consider signing up for as many sessions as you like.
+* some JUGs requested to have native speaking presenters.",,,,,,,,,,,,,,,,
+,,Week Date,Time and Date,,Zone,Area,JUG,Mailing Address,Swag Order,Lead,"# of
+attendees","Native
+Language",Segment,,,Notes,JUG details,
+,,,,Local time,,,,,,,,,Introduction,Demo,Ask the Experts,,Contact(s),Link
+,,week Date,Actual Date,Local time,TimeZone,Area,JUG,,,,Attendees,Language,Speaker1,Speaker2,Speaker3,Notes,Contacts,Jug Link
+,,"March 15, 2021",3/16/2021,18:00,GMT,Europe,London Java Community,,,Steve,,English,Steve Poole,"Georgios Andrianakis (confirmed) / Dimitris (confirmed) Sergey (security) Sanne (Hibernate, Persistence, Performance, GraalVM)",,80+ attendees,Dominique Carlo,https://londonjavacommunity.co.uk/
+,,"March 15, 2021",23 March 2021,11:00,EST,NA,Connecticut,send coolstuff store gift cards,,Steve,,English,,Steve Poole,Ken,35+ attendees,Ryan Cuprak,https://www.meetup.com/Connecticut-Java-Users-Group/
+,,"March 25, 2021",25 March 2021,19:30,GMT+1,Europe,VigoJUG and CoruñaJUG,,,Steve/Roberto,,English / Spanish,Steve Poole,Georgios Andrianakis (confirmed) ,Roberto Cortez,,Anton R Yuste,"https://www.corunajug.org/
+https://www.vigojug.org/"
+,,"April 8, 2021",8 April 2021,19:00,CEST,Europe,Lavajug,,,,,French,Andy Damevin (confirmed),Andy Damevin (confirmed),Clement Escoffier (confirmed),,Olivier Coupelon,https://www.lavajug.org/
+,,"April 12, 2021",15 April 2021,12:00,UTC-3,Latam,SouJava,,,,,Portuguese,,,,,"Elder Moraes, Edson Yanaga",https://soujava.org.br
+,,"April 19, 2021",21 April 2021,18:00,PST,NA,Silicon Valley Java User Group,,,Jeff,,English,(Jason Porter),Erin Schnabel,Erin Schnabel,,Arun Gupta,https://www.meetup.com/sv-jug/
+,,"April 19, 2021",22 April 2021,17:15,CDT,NA,Kansas City Java Users Group,,,Jeff,,English,Georgios,Georgios,Georgios,,Billy Korondo,https://kcjug.github.io/
+,,"April 26, 2021",26 April 20201,18:00,GMT,Europe,Manchester Java Community,,,,,English,Steve Poole,Georgios,Georgios,,Nick Ebbitt,https://www.meetup.com/ManchesterUK-Java-Community/
+,,"May 3, 2021",TBD,,GMT -6,NA,Chicago Java User Group,,,Jeff,,,(Jason Porter),Erin Schnabel,Erin Schnabel,,Mary Grygleski,https://cjug.org/
+,,May 3rd 2021,6 May 2021,16:30,PT,Europe,Portugal JUGs,,,,,English / Portuguese?,Roberto Cortez,Antonio Goncalves,,,Roberto Cortez,
+,,"May 11, 2021",11 May 2021,19:00,GMT +1,Europe,Paris JUG,,,,,French,Andy Damevin,Andy Damevin,"Clement, Loic Matthieu(confirmed)",Jug requested French speaking participants,Sun Tan,https://www.parisjug.org/
+,,"May 11, 2021",13 May 2021,19:00,CEST,Europe,JUG Saxony,,,Markus Eisele,,German,Daniel Britzinger,Daniel Britzinger,Daniel Britzinger,confirmed,Falk Hartmann,https://jugsaxony.org/
+,,"May 24, 2021",24 May 2021,17:30,EEST,Europe,Latvian Java User Group,,,,,,,,,Date TBD,Dace Baron,http://jug.lv
+,,"May 24, 2021",25th May 2021,10:00,WAT,Africa,Lagos JUG,,,Steve,,,,,,,,
+,,"May 24, 2021",27 May 2021,19:00,UTC-4,Latam,BolivianJUG,,,,,,,,,,,
+,,May 31st 2021,TBD,,GMT +1,Europe,"Niš Java User Group 
+Serbia",,,,,,,,,,,https://nisjug.org/
+,,"May 31, 2021",31 May 2021,19:00,GMT +2,Africa,JoziJug (South Africa),,,,,English,,,,,,
+,,"June 7, 2021",TBD,,GMT +9,Asia,Seoul Java User Group,,,,,English/Korean,Bruno Georges,Bruno,Bruno,,,
+,,"June 7, 2021",8 June 2021,TBD,GMT +1,Europe,Warszawa Java User Group,,,,,,Michał Szynkiewicz,Michał,,,Cezary Sanecki,https://warszawa.jug.pl/
+,,"June 7, 2021",8 June 2021,18:30,GMT +1,Europe,Madrid JUG,,,,,Spanish,Roberto Cortez (confirmed),,,,,https://www.meetup.com/MadridJUG/
+,,"June 14, 2021",TBD,,,Asia,Singapore,,,,,English,Bruno/Emmanuel,,,Coordination with M Isvy ?,,https://www.meetup.com/singajug/
+,,"June 14, 2021","June 14, 2021",1900h,CEST,Europe,Munich ,,,Markus Eisele,,German,Wanja Pernath,Wanja Pernath,Wanja Pernath,confirmed,Andreas Haug,http://www.jugm.de/
+,,"June 14, 2021","June 15, 2021",17:30, EET (GMT+2),Europe,Bulgarian Java User Group,,,,,,,,,,Ivan St. Ivanov,https://jug.bg/
+,,"June 14, 2021","June 17, 2021",18:30,GMT+1,Europe,Barcelona JUG,,,,,Spanish,Roberto Cortez (confirmed),,,,Anyul Rivas,https://www.barcelonajug.org/
+,,"June 21, 2021",TBD,,,Asia,Beijing,,,,,English,Bruno / Jim(?),,,,,
+,,"June 21, 2021","June 22, 2021",18:30,EST,NA,NYJava SIG,,,,,English,,,,,Barry Burd / Sai Sharan,http://www.javasig.com/
+,,"June 28, 2021",TBD,,GMT +9,Asia,Tokyo,,,,,English,Bruno,,,,,
+,,"June 28, 2021","June 30, 2021",TBD,,NA,Houston JUG,,,,,,,,,,,
+,,"July 5, 2021","July 8, 2021",17:00,CST (GMT--6),CA,Guatemala Java Users Group,,,,,Spanish,,,,,Víctor Orozco,
+,,"July 12, 2021",13 July 2021,18:30,CEST (GMT+2),Europe,"JUG Ingolstadt, Germany",,,Markus Eisele,,German,Wanja Pernath,Wanja Pernath,Wanja Pernath,confirmed ,Florian Heubeck,https://jug-in.bayern/
+,,"July 19, 2021",20 July 2021,5:00 PM,PST,NA,Seattle Java User Group,,,Jeff,,English,(Jason Porter),Erin Schnabel,Erin Schnabel,,Nimret Singh Sandhu,https://www.seajug.org/
+,,"July 19, 2021",22 July 2021,18:00,CT (GMT-5),NA,JUG Guadalajar,,,,,,,,,,,
+,,"July 26, 2021",,,,,,,,,,,,,,,,
+,,"August 2, 2021",,,,,,,,,,,,,,,Michael Redlich,https://javasig.org/
+,,"September 14, 2021","September 14, 2021",18:30,ET,NA,Garden State JUG,,,,,,,,,,,
+,,"October 21, 2021","October 21, 2021",,,Europe,Viada,,,,,,,,,,dbrintzi@redhat.com,
+,,TBD,,,,Europe,Swiss JUG,,,,,,,,,,Patrick Baumgartner,
+,,,,,,,,,,,,,,,,,Falk Hartmann,
+,,TBD,,,,Europe,BolivianJUG,,,,,,,,,,Julio Richa,
+,,,,,,,,,,,,,,,,,,
+,,TBD,,,,Europe,Java User Group Munich,,,,,,,,,,,

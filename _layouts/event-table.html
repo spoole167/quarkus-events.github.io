@@ -1,0 +1,85 @@
+---
+layout: default
+---
+{% assign today = 'now' | date: "%Y%m%d" %}
+
+  {% if page.show_all %}
+    <h2>All {{ page.title }} entries as at {{ 'now' | date: "%d %b %Y" }}</h2>
+  {% else %}
+  <h2>Current {{ page.title }} list as at {{ 'now' | date: "%d %b %Y" }}</h2>
+  {% endif %}
+
+{% assign  events = site.events%}
+
+{% if page.type %}
+  {% assign  events = events | where: "type" , page.type %}
+  {% assign suppress_type = true %}
+{% endif %}
+{% if page.format %}
+  {% assign  events = events | where: "format" , page.format %}
+  {% assign suppress_format = true %}
+{% endif %}
+
+{{ content }}
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        {% if page.show_talk %}
+        <th scope="col">Title</th>
+        <th scope="col">Speakers</th>
+        {% else %}
+        <th scope="col">Time</th>
+        <th scope="col">TimeZone</th>
+        {% endif %}
+        <th scope="col">Group</th>
+        {% unless suppress_type %}
+          <th scope="col">Type</th>
+        {% endunless %}
+        {% unless suppress_format %}
+          <th scope="col">Format</th>
+        {% endunless %}
+      </tr>
+    </thead>
+
+    <tbody>
+
+    {% for entry in events %}
+
+
+      <tr>
+
+          {% assign when = entry.date | date: "%Y%m%d" %}
+          {% if page.show_all or when >= today %}
+
+      <td>{{ entry.date | date: "%b %d, %Y" }}</td>
+      {% if page.show_talk %}
+      <td>{{ entry.talk }}</td>
+      <td>{{ entry.presenters }}</td>
+      {% else %}
+      <td>{{ entry.time }}</td>
+      <td>{{ entry.zone }}</td>
+      {% endif %}
+      {% if entry.link %}
+        <td><a href="{{ entry.link }}">{{ entry.group }}</a></td>
+        {% else %}
+          <td>{{ entry.group }}</td>
+      {% endif %}
+
+      {% unless suppress_type %}
+        <td>{{ entry.type }}</td>
+      {% endunless %}
+
+      {% unless suppress_format %}
+        <td>{{ entry.format}} </td>
+      {% endunless %}
+
+    </tr>
+
+      {% endif %}
+
+
+{% endfor %}
+</tbody>
+  </table>

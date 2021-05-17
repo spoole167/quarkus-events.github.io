@@ -1,0 +1,26 @@
+
+html,
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: black;
+  color: white;
+  line-height: 1rem;
+}
+
+a {
+    color: white;
+}
+
+.card, .jumbotron, .list-group-item, .table {
+    background-color: black;
+    color: white;
+}
+.card-body {
+    background-color: #205894;
+    padding: 1rem;
+}
+
+.callout {
+    border: 1px solid #4695EB;
+    padding: 1.5rem;
+}

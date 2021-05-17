@@ -1,0 +1,11 @@
+{% include current_events.html %}
+{% assign  wt_events = current_events | where: "type" , "world_tour" %}
+{% assign  wt_count = wt_events | size %}
+
+{% for entry in wt_events  %}
+  {% if entry.help %}
+       {% assign help_requests =  help_requests | push: entry %}
+    {% endif %}
+{% endfor %}
+
+{% assign wt_help = help_requests | size %}

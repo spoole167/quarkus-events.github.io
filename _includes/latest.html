@@ -1,0 +1,30 @@
+<h4><i class="bi bi-calendar"></i> Coming up</h4>
+<div class="container callout">
+<div class="row">
+{% assign c = 0 %}
+{% assign today = 'now' | date: "%Y%m%d" %}
+{% assign my_array = "" | split: ',' %}
+
+{% for entry in site.events  %}
+{% assign when = entry.date | date: "%Y%m%d" %}
+{% if when >= today %}
+    {% assign my_array = my_array | push: entry %}
+  {% endif %}
+{% endfor %}
+
+{% for post in my_array | sort 'date'  limit: 8%}
+{% assign path = post.id | split: '/' %}
+{% assign type = path[2] %}
+
+<div class="col-12">
+  <div class="card-body mb-1">
+  <a href="{{ post.url }}">
+    <i class="bi bi-{{ site.data.icons[type] | default: 'people' }}"></i>
+
+  {{ post.date | date: "%d %b" }} {{ post.group }}
+  </a>
+  </div>
+</div>
+{% endfor %}
+</div>
+</div>
