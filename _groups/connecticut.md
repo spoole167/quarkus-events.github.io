@@ -4,7 +4,7 @@ group: Connecticut Java User Group
 short: connecticut
 type: jug
 contact: rcuprak
-image: https://secure.meetupstatic.com/photos/event/a/4/8/600_96002632.jpeg
+image: /assets/img/groups/connecticut.jug.jpeg
 location:
   city: East Hartford
   country: US
