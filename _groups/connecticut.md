@@ -3,6 +3,7 @@ layout: group
 group: Connecticut Java User Group
 short: connecticut
 type: jug
+contact: rcuprak
 location:
   city: East Hartford
   country: US
