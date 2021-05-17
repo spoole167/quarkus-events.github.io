@@ -21,6 +21,7 @@ collections:
       - { label: 'Short Name', name: 'short', widget: 'string' }
       - { label: 'Type',     name: 'type', widget: 'select', options: ['jug','company','education'] }
       - { label: 'Contact Point', name: 'contact',  required: false, widget: 'relation', collection: 'people', value_field: 'id', search_fields: ['name'] , display_fields: ['name']  }
+      - { label: 'Home Page' ,  name: 'homepage' , widget: 'string' ,  required: false}
       - { label: 'Image' ,  name: 'image' , widget: 'image' , media_folder: '/assets/img/groups' , required: false}
       -  label: 'Location'
          name: 'location'
@@ -302,7 +303,7 @@ collections:
                   - { value:	"AX", label:  "Åland Islands" }
 
 
-      - { label: 'Details',  name: 'details', widget: 'markdown' , required: false }
+      - { label: 'Details',  name: 'body', widget: 'markdown' , required: false }
 
   - name: 'people'
     label: 'People'
