@@ -1,17 +1,28 @@
 ---
-week : 2021-03-15
-group : London Java Community
-Language : English
-zone : GMT
-area : Europe
-title : London Java Community
-notes : 80+ attendees
-contacts : Dominique Carlo
-link : https://londonjavacommunity.co.uk/
-time : 1800
-layout : event
-type : live
-leader : Steve
-format : world_tour
+contact: dc
+notes: 80+ attendees
+leader: Steve
+layout: event
+format: world_tour
+title: London Java Community
+virtual: true
+group: ljc
+link: https://londonjavacommunity.co.uk/
+week: 2021-03-15
+date: 2021-05-17T11:55:01.875Z
+time: 1800
+zone: GMT
+presenters:
+  - role: presenter
+    presenter: spoole167
+  - role: demonstrator
+    presenter: gandrian
+area: Europe
+contacts: Dominique Carlo
+location:
+  country: GB
+  city: London
+Language: English
+type: live
 ---
 World Tour stop
