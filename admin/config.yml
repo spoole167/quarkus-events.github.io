@@ -641,6 +641,20 @@ collections:
         - { label: 'Abstract', name: 'abstract', widget: 'string' }
         - { label: 'Layout', name: 'layout', default: 'contact-list' }
         - { label: 'Child Layout', name: 'children', default: 'cards' , required: false}
+        -   label: 'Content Submission'
+            name: 'content'
+            required: false
+            widget: object
+            fields:
+              - label: 'Link'
+                name: 'link'
+                widget: 'string'
+                required: false
+              - label: 'Instructions'
+                name: 'instructions'
+                widget: 'text'
+                required: false
+
         -   label: 'Display Order'
             name: 'display'
             required: false

@@ -1,5 +1,5 @@
 ---
-name: conference
+name: Conference
 title: Conference Talks
 abstract: Talks on Quarkus at conferences
 type: conference
