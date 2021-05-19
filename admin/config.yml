@@ -641,13 +641,17 @@ collections:
         - { label: 'Abstract', name: 'abstract', widget: 'string' }
         - { label: 'Layout', name: 'layout', default: 'contact-list' }
         - { label: 'Child Layout', name: 'children', default: 'cards' , required: false}
-        -   label: 'Content Submission'
+        -   label: 'Content Submission: choose email or link'
             name: 'content'
             required: false
             widget: object
             fields:
               - label: 'Link'
                 name: 'link'
+                widget: 'string'
+                required: false
+              - label: 'Email'
+                name: 'email'
                 widget: 'string'
                 required: false
               - label: 'Instructions'
