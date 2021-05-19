@@ -11,7 +11,9 @@ display:
   <div>
     <h3>Contributing content</h3>
   </div>
+
   <div class="row">
+  {% for section in site.sections %}
     <div class="col-4">
       <div class="card">
         <img src="/assets/images/sections/world_tour.png" class="card-img-top" alt="World Tour image">
@@ -23,4 +25,5 @@ display:
       </div>
     </div>
   </div>
+  {% endfor %}
 </div>

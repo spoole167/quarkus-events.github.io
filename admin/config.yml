@@ -20,7 +20,7 @@ collections:
       - { label: 'Group',    name: 'group', widget: 'string' }
       - { label: 'Short Name', name: 'short', widget: 'string' }
       - { label: 'Type',     name: 'type', widget: 'select', options: ['jug','company','education'] }
-      - { label: 'Contact Point', name: 'contact',  required: false, widget: 'relation', collection: 'people', value_field: 'id', search_fields: ['name'] , display_fields: ['name']  }
+      - { label: 'Contact Point', name: 'contact',  required: false, widget: 'relation', collection: 'people', value_field: 'name', search_fields: ['name'] , display_fields: ['name']  }
       - { label: 'Home Page' ,  name: 'homepage' , widget: 'string' ,  required: false}
       - { label: 'Image' ,  name: 'image' , widget: 'image' , media_folder: '/assets/img/groups' , required: false}
       -  label: 'Location'
@@ -329,13 +329,13 @@ collections:
         - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'event' }
         - { label: 'Format', name: 'format', widget: 'hidden', default: 'world_tour' }
 
-        - { label: 'Event Organiser (manages speakers, swag etc)', name: 'organiser',  required: false, widget: 'relation', collection: 'people', value_field: 'id', search_fields: ['name'] , display_fields: ['name']  }
+        - { label: 'Event Organiser (manages speakers, swag etc)', name: 'organiser',  required: false, widget: 'relation', collection: 'people', value_field: 'name', search_fields: ['name'] , display_fields: ['name']  }
 
         - { label: 'Event Title', name: 'title', widget: 'string' }
-        - { label: 'Virtual Event?', name: 'virtual', widget: 'boolean' }
+        - { label: 'Virtual Event?', name: 'virtual', widget: 'boolean' ,required: false }
 
         - { label: 'Host Group', name: 'group', widget: 'relation' , collection: 'groups' , value_field: 'short' , search_fields: ['group'] }
-        - { label: 'Host contact', name: 'contact',  required: false, widget: 'relation', collection: 'people', value_field: 'id', search_fields: ['name'] , display_fields: ['name']  }
+        - { label: 'Host contact', name: 'contact',  required: false, widget: 'relation', collection: 'people', value_field: 'name', search_fields: ['name'] , display_fields: ['name']  }
 
         - { label: 'Link', name: 'link', widget: 'string'  , required: false}
 
@@ -344,7 +344,7 @@ collections:
         - { label: 'Event Time (24hr clock)', name: 'time', widget: 'number' , required: false }
         - { label: 'Timezone',   name: 'zone', widget: 'string' , required: false }
 
-        - { label: 'Presenters', name: 'presenters',  required: false, widget: 'list', fields: [ { label: 'role' , name: 'role',  widget: 'select', options: ['presenter','demonstrator','support']  }, { label: 'presenter' , name: 'presenter' , widget: 'relation', collection: 'people', value_field: 'id', search_fields: ['name'] , display_fields: ['name'] } ]  }
+        - { label: 'Presenters', name: 'presenters',  required: false, widget: 'list', fields: [ { label: 'role' , name: 'role',  widget: 'select', options: ['presenter','demonstrator','support']  }, { label: 'presenter' , name: 'presenter' , widget: 'relation', collection: 'people', value_field: 'name', search_fields: ['name'] , display_fields: ['name'] } ]  }
         - { label: 'Help Wanted', name: 'help', required: false, widget: 'list', fields: [ { label: 'type' , name: 'type' , widget: 'select', options: ['presenter','demonstrator','organisation','support','other']  } ] }
         - label: 'Location'
           name: 'location'
@@ -353,6 +353,10 @@ collections:
           fields:
                - label: 'City/Town'
                  name: 'city'
+                 widget: 'string'
+                 required: false
+               - label: 'State/Province'
+                 name: 'state'
                  widget: 'string'
                  required: false
                - label: 'Country'
