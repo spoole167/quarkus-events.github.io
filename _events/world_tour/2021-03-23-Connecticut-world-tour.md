@@ -1,13 +1,16 @@
 ---
+layout: event
+virtual: true
+contact: Ryan Cuprak
 notes:
   - send coolstuff store gift cards
   - 35+ attendees
-help:
-  - type: presenter
-  - type: organisation
-leader: Steve
-layout: event
 zone: EST
+presenters:
+  - role: presenter
+    presenter: Georgios Andrianakis
+help: []
+leader: Steve
 area: NA
 format: world_tour
 title: Connecticut
@@ -17,7 +20,7 @@ time: 1100
 contacts: Ryan Cuprak
 Language: English
 type: live
-group: ljc
+group: connecticut
 link: https://www.meetup.com/Connecticut-Java-Users-Group/
 ---
 World Tour stop
