@@ -22,7 +22,5 @@ collections:
     output: true
   groups:
     output: true
-  people:
-    output: true
   guides:
     output: true

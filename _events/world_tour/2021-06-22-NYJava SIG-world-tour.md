@@ -1,16 +1,15 @@
 ---
 week : 2021-06-21
 group : NYJava SIG
-Language : English
+language : English
 zone : EST
 area : NA
 title : NYJava SIG
 format : world_tour
-contacts : Barry Burd / Sai Sharan
+organiser : Jeff Beck
 link : http://www.javasig.com/
 time : 1830
 date : 2021-06-22
 layout : event
 type : live
 ---
-World Tour stop

@@ -10,4 +10,3 @@ date : 2021-07-22
 layout : event
 type : live
 ---
-World Tour stop

@@ -7,4 +7,3 @@ area : Europe
 group : Java User Group Munich
 type : live
 ---
-World Tour stop

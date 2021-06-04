@@ -1,15 +1,15 @@
 ---
-week : 2021-06-07
+week : 2021-06-14
 group : Warszawa Java User Group
 zone : GMT +1
 area : Europe
 title : Warszawa Java User Group
 format : world_tour
-contacts : Cezary Sanecki
+presenter2 : Michał
+presenter1 : Michał Szynkiewicz
 link : https://warszawa.jug.pl/
-time : TBD
-date : 2021-06-08
+time : 
+date : 2021-06-15
 layout : event
 type : live
 ---
-World Tour stop

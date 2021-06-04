@@ -1,7 +1,7 @@
 import csv
 import datetime
 
-
+# https://docs.google.com/spreadsheets/d/e/2PACX-1vQxq9zcIq21gygle-H6AqPf4TaTsMFnuGBMIyquEVbdx_lz-w0rD6MgBhik5NkfSwGbTsW1WscN-lRi/pub?gid=0&single=true&output=csv
 month = 1
 day   = 1
 
@@ -47,65 +47,58 @@ def fakeDate():
 #
 def toFile(data):
 
+    print data
     if 'group' not in data: return
-    if data['group'][0]=='': return
+    if data['group']=='': return
 
     filedate=fakeDate()
-    data['format']=['world_tour']
-    data['layout']=['event']
-    data['type']=['live']
+    data['format']='world_tour'
+    data['layout']='event'
+    data['type']='live'
     data['title']=data['group']
 
 
-
-    if 'presenters' in data: data.pop('presenters') # data['help']=["presenters"]
-
     if 'time' in data:
-          t=data['time'][0]
+          t=data['time']
           if isinstance(t, str):
              t=t.replace(':', '')
-             data['time']=[t]
+             if t=='TBD' : t=""
+             data['time']=t
 
     if 'date' in data:
-     date=data['date'][0]
+     date=data['date']
      date=toDate(date)
      if isinstance(date,datetime.datetime):
          filedate=date
-         data['date']=[date.strftime("%Y-%m-%d")]
+         data['date']=date.strftime("%Y-%m-%d")
      else:
          del data['date']
 
      if 'week' in data:
-      week=data['week'][0]
+      week=data['week']
       week=toDate(week)
       if isinstance(week,datetime.datetime):
-          data['week']=[week.strftime("%Y-%m-%d")]
+          data['week']=week.strftime("%Y-%m-%d")
           if filedate=='' : filedate=week
       else:
           del data['week']
 
 
 
-    group=data['group'][0]
+    group=data['group']
 
     filename="../_events/world_tour/"+filedate.strftime("%Y-%m-%d") +'-'+group+ '-world-tour.md'
     print "file ",filename
 
     md= open(filename, 'w')
     md.write("---\n")
-    separator = ', '
+    separator = '","'
     for i,(k,v) in enumerate(data.items()):
-      v=list(set(v))
-
-      if len(v) > 1 :
-          line=k+' : ['+separator.join(v)+']'
-      else:
-          line=k+' : '+v[0]
-
+      #v=list(set(v)) #list(set(v))
+      line=k+' : '+v
       md.write(line+'\n')
 
     md.write("---\n")
-    md.write("World Tour stop\n")
     md.close()
 
 
@@ -119,12 +112,14 @@ def toFile(data):
 file   = open('tour.csv', 'r')
 reader = csv.reader(file, delimiter=',', quotechar='"')
 
-fields = ["_","_","week","date","time","zone","area","group","notes","_","leader","_","Language","presenters","presenters","presenters","notes","contacts","link","_","_"]
+#organiser	week	date	time	zone	area	jug	_	_	_	language	presenter1	presenter2	presenter3	notes	_	link
+#fields = ["_","_","week","date","time","zone","area","group","notes","_","leader","_","Language","presenters","presenters","presenters","notes","contacts","link","_","_"]
 
 
 for i, row in enumerate(reader):
 
-  if i > 6 :
+  if i == 0 : fields = row
+  if i > 3 :
       # data
       results={}
       print "======"
@@ -147,8 +142,8 @@ for i, row in enumerate(reader):
               cell = cell.replace('7th','7')
               cell = cell.replace('8th','8')
               cell = cell.replace('confirmed','')
-              value=results.get(key,[])
-              value.append(cell)
+              value=results.get(key,"")
+              value=value+cell
               results[key]=value
               #print key,"==",value
 

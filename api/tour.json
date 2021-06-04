@@ -4,6 +4,8 @@
 
 [
   {% for tour in current_events  %}
+    {% capture presenter_names %}{{tour.presenter1}},{{tour.presenter2}},{{tour.presenter3}}{% endcapture%}
+    {% assign presenters= presenter_names | split: "," | uniq | array_to_sentence_string %}
     {
       "title": "{{ tour.title }}",
       "category": "{{ tour.category }}",
@@ -12,7 +14,7 @@
       "zone": "{{ tour.zone }}",
       "jug": "{{ tour.group }}",
       "language": "{{ tour.Language}}",
-      "presenter": "{{ tour.presenters | map: 'presenter' | array_to_sentence_string }}",
+      "presenters": "{{ presenters }}",
       "jugcontact": "{{ tour.contacts }}",
       "juglink": "{{tour.link}}"
     }

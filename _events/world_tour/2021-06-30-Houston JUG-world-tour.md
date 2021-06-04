@@ -1,12 +1,12 @@
 ---
 week : 2021-06-28
 group : Houston JUG
-format : world_tour
-title : Houston JUG
 area : NA
-time : TBD
+title : Houston JUG
+format : world_tour
+organiser : Jeff Beck
+time : 
 date : 2021-06-30
 layout : event
 type : live
 ---
-World Tour stop
